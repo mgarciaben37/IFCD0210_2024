@@ -16,6 +16,10 @@ export function createAddTask(selector = 'body', position = 'beforeend') {
     
     `;
 
+    
+
     const element = render(selector, position, template);
+
+   
     return element;
 }

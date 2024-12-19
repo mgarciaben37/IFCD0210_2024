@@ -29,8 +29,8 @@ export function createCard(
     const button = element.querySelector('button');
     button.addEventListener('click', () => {
         console.log(task);
-        deleteCard(task);
-        element.remove();
+        deleteCard(task); //Esto lo elimina del padre
+        element.remove();//Esto borra el elemento
     });
     return element;
 }

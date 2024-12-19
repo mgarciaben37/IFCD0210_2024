@@ -32,7 +32,7 @@ export function createTaskCards(
     }
 
     function addCard(task) {
-        task.id = task.id || crypto.randomUUID.split('-')[0];
+        task.id = task.id || crypto.randomUUID().split('-')[0];
         tasks.push(task);
     }
 
